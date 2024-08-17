@@ -1,0 +1,38 @@
+{
+  "name": "expressjs01",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    
+		"dev": "nodemon ./bin/www",
+		"start": "node ./bin/www",
+		"postinstall": "npx sequelize-cli db:migrate",
+		"build": "npm run postinstall && npm run vercel-build"
+	},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.18.0",
+    "http-status-codes": "^2.3.0",
+    "jsonwebtoken": "^9.0.2",
+    "layout": "^2.2.0",
+    "layouts": "^3.0.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.12.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.3",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.2"
+  }
+}
